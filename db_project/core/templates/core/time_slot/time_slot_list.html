@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+        {% for t in object_list %}
+            <a href="{% url 'core:time_slot_detail' t.time_slot_id %}" class="card-title">{{ t }}</a><hr>
+        {% endfor %}
+        </div>
+        <a href="{% url 'core:time_slot_create' %}" class="btn btn-success">Create</a>
+    </div>
+
+{% endblock %}

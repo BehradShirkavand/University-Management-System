@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>Course : {{ object.course }}</p>
+    <p>Prereq : {{ object.prereq }}</p><hr>
+
+    <a href="{% url 'core:prereq_delete' object.course %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'core:prereq_update' object.course %}" class="btn btn-info">Update</a>
+
+
+{% endblock content %}
+    

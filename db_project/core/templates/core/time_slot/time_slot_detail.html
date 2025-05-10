@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>Day : {{ object.day }}</p>
+    <p>Start : {{ object.start_hr }}:{{ object.start_min}}</p>
+    <p>End : {{ object.end_hr}}:{{ object.end_min }}</p>
+
+    <a href="{% url 'core:time_slot_delete' object.time_slot_id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'core:time_slot_update' object.time_slot_id %}" class="btn btn-info">Update</a>
+
+
+{% endblock content %}
+    

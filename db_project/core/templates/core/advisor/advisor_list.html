@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+        {% for advisor in object_list %}
+            <a href="{% url 'core:advisor_detail' advisor.s.id %}" class="card-title">Student: {{ advisor.s }} | Instructor: {{ advisor.i }}</a><hr>
+        {% endfor %}
+        </div>
+        <a href="{% url 'core:advisor_create' %}" class="btn btn-success">Create</a>
+    </div>
+
+{% endblock %}

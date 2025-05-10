@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p><a href="{% url 'core:student_detail' object.s_id.id %}">Student : {{ object.s_id }}</a></p>
+    <p><a href="{% url 'core:course_detail' object.course %}">Course : {{ object.course }}</a></p>
+    <p>Year : {{ object.sec.year }}</p>
+    <p>Semester : {{ object.sec.semester }}</p>
+    <p>Classroom : {{ object.sec.room_id }}</p>
+    <p>Time slot : {{ object.sec.time_slot_id }}</p>
+    <p>Grade : {{ object.grade }}</p><hr>
+
+    <a href="{% url 'core:take_delete' object.id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'core:take_update' object.id %}" class="btn btn-info">Update</a>
+
+
+{% endblock content %}
+    

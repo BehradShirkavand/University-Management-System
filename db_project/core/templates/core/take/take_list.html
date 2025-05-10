@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+        {% for take in object_list %}
+            <a href="{% url 'core:take_detail' take.id %}" class="card-title">({{ take.s_id }}) has passed the course ({{ take.course }})</a><hr>
+        {% endfor %}
+        </div>
+        <a href="{% url 'core:take_create' %}" class="btn btn-success">Create</a>
+    </div>
+
+{% endblock %}

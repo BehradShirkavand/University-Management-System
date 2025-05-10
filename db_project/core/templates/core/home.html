@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1><center>Welcome to University Management System</center></h1><br>
+    <center><a href="{% url 'core:students' %}" class="btn btn-dark">Students</a></center><hr>
+    <center><a href="{% url 'core:instructors' %}" class="btn btn-dark">Instructors</a></center><hr>
+    <center><a href="{% url 'core:courses' %}" class="btn btn-dark">Courses</a></center><hr>
+    <center><a href="{% url 'core:departments' %}" class="btn btn-dark">Departments</a></center><hr>
+    <center><a href="{% url 'core:takes' %}" class="btn btn-dark">Takes</a></center><hr>
+    <center><a href="{% url 'core:teaches' %}" class="btn btn-dark">Teaches</a></center><hr>
+    <center><a href="{% url 'core:sections' %}" class="btn btn-dark">Sections</a></center><hr>
+    <center><a href="{% url 'core:classrooms' %}" class="btn btn-dark">Classrooms</a></center><hr>
+    <center><a href="{% url 'core:advisors' %}" class="btn btn-dark">Advisors</a></center><hr>
+    <center><a href="{% url 'core:prereqs' %}" class="btn btn-dark">Prerequisites</a></center><hr>
+    <center><a href="{% url 'core:time_slots' %}" class="btn btn-dark">Time slots</a></center><hr>
+
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p><a href="{% url 'core:course_detail' object.course_id %}">Course : {{ object.course }}</a></p>
+    <p>Year : {{ object.year }}</p>
+    <p>Semester : {{ object.semester }}</p>
+    <p>Classroom : {{ object.room_id }}</p>
+    <p>Time slot : {{ object.time_slot_id }}</p>
+
+    <a href="{% url 'core:section_delete' object.sec_id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'core:section_update' object.sec_id %}" class="btn btn-info">Update</a>
+
+
+{% endblock content %}
+    

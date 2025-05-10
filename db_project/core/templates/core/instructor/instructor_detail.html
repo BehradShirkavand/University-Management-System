@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>ID : {{ object.id }}</p>
+    <p>Name : {{ object.name }}</p>
+    <p><a href="{% url 'core:department_detail' object.dept_name %}">Department : {{ object.dept_name }}</a></p>
+    <p>Salary : {{ object.salary }}</p><hr>
+
+    <a href="{% url 'core:instructor_delete' object.id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'core:instructor_update' object.id %}" class="btn btn-info">Update</a>
+
+
+{% endblock content %}
+    

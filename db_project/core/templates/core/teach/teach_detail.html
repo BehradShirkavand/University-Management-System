@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p><a href="{% url 'core:instructor_detail' object.ins_id.id %}">Instructor : {{ object.ins_id }}</a></p>
+    <p><a href="{% url 'core:course_detail' object.course %}">Course : {{ object.course }}</a></p>
+    <p>Year : {{ object.sec.year }}</p>
+    <p>Semester : {{ object.sec.semester }}</p>
+    <p>Classroom : {{ object.sec.room_id }}</p>
+    <p>Time slot : {{ object.sec.time_slot_id }}</p>
+
+    <a href="{% url 'core:teach_delete' object.id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'core:teach_update' object.id %}" class="btn btn-info">Update</a>
+
+
+{% endblock content %}
+    

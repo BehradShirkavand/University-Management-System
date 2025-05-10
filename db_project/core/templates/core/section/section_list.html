@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+        {% for section in object_list %}
+            <a href="{% url 'core:section_detail' section.course %}" class="card-title">{{ section }}</a><hr>
+        {% endfor %}
+        </div>
+        <a href="{% url 'core:section_create' %}" class="btn btn-success">Create</a>
+    </div>
+
+{% endblock %}

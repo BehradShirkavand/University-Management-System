@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <p>Building : {{ object.building }}</p>
+    <p>Room number : {{ object.room_number }}</p>
+    <p>Capacity : {{ object.capacity }}</p><hr>
+
+    <a href="{% url 'core:classroom_delete' object.id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'core:classroom_update' object.id %}" class="btn btn-info">Update</a>
+
+
+{% endblock content %}
+    

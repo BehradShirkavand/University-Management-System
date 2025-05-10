@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="card" style="width: 30rem;">
+        <div class="card-body">
+        {% for teach in object_list %}
+            <a href="{% url 'core:teach_detail' teach.id %}" class="card-title">({{ teach.ins_id }}) has taught the course ({{ teach.course }})</a><hr>
+        {% endfor %}
+        </div>
+        <a href="{% url 'core:teach_create' %}" class="btn btn-success">Create</a>
+    </div>
+
+{% endblock %}

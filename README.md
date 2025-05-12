@@ -5,14 +5,14 @@ A simple and efficient university management system built with Django. This syst
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-- [Features](🚀#features)
-- [Technologies Used](🛠#technologies-used)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](📌#installation)
+  - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](📜#license)
+- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## About the Project
@@ -25,7 +25,7 @@ This project is ideal for:
 - Institutions looking for a basic university management solution.
 - Expanding and customizing for more complex requirements.
 
-## 🚀 Features
+## Features
 
 - **Student Management**: Add, view, edit, and delete student records.
 - **Course Management**: Manage course details and assignments.
@@ -33,7 +33,7 @@ This project is ideal for:
 - **Department Management**: Organize and manage departments efficiently.
 - **User-Friendly Interface**: Simple and intuitive design for seamless navigation.
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **Python** (68.2% of the code)
 - **HTML** (31.8% of the code)
@@ -51,7 +51,7 @@ Ensure you have the following installed on your system:
 - pip (Python package manager)
 - A virtual environment tool (e.g., `venv` or `virtualenv`)
 
-### 📌 Installation
+### Installation
 
 1. Clone the repository:
 
@@ -108,7 +108,7 @@ Contributions are welcome! To contribute:
 4. Push the branch (`git push origin feature/NewFeature`).
 5. Open a Pull Request.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
